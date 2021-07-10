@@ -60,7 +60,7 @@ function initMap(){
             animation: google.maps.Animation.DROP,
         });
         const infoWindow = new google.maps.InfoWindow({
-            content: "Mr Mario",
+            content: currMarker[0],
         });
         marker.addListener("click", () => {
             infoWindow.open(marker, marker);
